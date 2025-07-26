@@ -1,0 +1,334 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #fff;
+  width: 450px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #282c3f;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #535766;
+}
+
+.subtitle a {
+  color: #ff3f6c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+label {
+  font-size: 14px;
+  color: #282c3f;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #d4d5d9;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  background-color: #ff3f6c;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e73362;
+}
+
+.terms {
+  font-size: 12px;
+  color: #7e818c;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.terms a {
+  color: #ff3f6c;
+  text-decoration: none;
+}
+.img{
+    margin-top: 0%;
+    padding: 10px;
+    background-color: #ff3f6c;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+} */
+
+
+/* login.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.myntra-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  /* position: sticky; */
+  top: 0;
+}
+
+.logo img {
+  width: 100px;
+  height: 50px;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+  color: #ff3f6c; /* Myntra pink */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.search-bar input[type="text"] {
+  border: none;
+  padding: 4px 6px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-bar button {
+  background-color: #ff3f6c;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(100%) invert(1);
+}
+
+.search-bar button:hover {
+  background-color: #e0325c;
+}
+
+.user-icons {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.user-icons a img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.user-icons a:hover img {
+  filter: none;
+}
+
+/* Login Container */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: #f5f5f5;
+  min-height: calc(100vh - 72px); /* minus navbar height approx */
+}
+
+.login-box {
+  background: #fff;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  padding: 30px 35px 40px;
+  text-align: center;
+}
+
+.login-box .img {
+  border-radius: 6px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.login-box h2 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.subtitle a {
+  color: #ff3f6c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.subtitle a:hover {
+  text-decoration: underline;
+}
+
+form {
+  text-align: left;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 14px;
+}
+
+form input[type="tel"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="tel"]:focus {
+  border-color: #ff3f6c;
+}
+
+form input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+form span {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+form span a {
+  color: #ff3f6c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+form span a:hover {
+  text-decoration: underline;
+}
+
+form button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #ff3f6c;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e0325c;
+}
+
+.terms {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #777;
+  text-align: center;
+}
+
+.terms a {
+  color: #ff3f6c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}

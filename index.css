@@ -1,0 +1,387 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.new {
+  color: #ff3f6c; 
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}  
+.logo img {
+  height: 36px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-links li p, .nav-links li a {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+}
+.profile-dropdown {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background: #fff;
+  display: none;
+  flex-direction: column;
+  padding: 12px 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-width: 220px;
+  z-index: 10;
+}
+
+.dropdown-profile:hover .profile-dropdown {
+  display: flex;
+}
+
+.profile-dropdown h4 {
+  font-size: 13px;
+  color: #ff3f6c;
+  margin: 8px 0 4px;
+  font-weight: 600;
+}
+
+.profile-dropdown li {
+  list-style: none;
+}
+
+.profile-dropdown li a {
+  padding: 8px 10px;
+  display: block;
+  font-size: 14px;
+  color: #333;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.profile-dropdown li a:hover {
+  background-color: #ffe6ec;
+  color: #ff3f6c;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f5f5f6;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+  width: 200px;
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.icon i {
+  font-size: 18px;
+}
+ */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.new {
+  color: #ff3f6c; 
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}  
+
+.logo img {
+  height: 36px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-links li p,
+.nav-links li a {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: #fff;
+  display: none;
+  flex-direction: column;
+  padding: 12px 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-width: 220px;
+  z-index: 10;
+}
+
+.dropdown-profile {
+  position: relative; 
+}
+
+.dropdown-profile:hover .profile-dropdown {
+  display: flex;
+}
+
+.profile-dropdown h4 {
+  font-size: 13px;
+  color: #ff3f6c;
+  margin: 8px 0 4px;
+  font-weight: 600;
+}
+
+.profile-dropdown li {
+  list-style: none;
+}
+
+.profile-dropdown li a {
+  padding: 8px 10px;
+  display: block;
+  font-size: 14px;
+  color: #333;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.profile-dropdown li a:hover {
+  background-color: #ffe6ec;
+  color: #ff3f6c;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f5f5f6;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+  width: 200px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative; 
+}
+
+.icon i {
+  font-size: 18px;
+}
+.but{
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  color: #ff3f6c;
+  border-color: #ff3f6c;
+}
+#carouselExampleControls .carousel-inner .carousel-item .image-image{
+  width: 100vw;
+  height: 41.5vh;
+  margin-top: 3%;
+}
+#carouselExampleDark .carousel-inner .carousel-item .image-image{
+  width: 19%;
+}
+.section_head {
+    margin: 5% 0% 5% 3%;
+    color: #3e4152;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+}
+
+.carousel-inner .carousel-item .image-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: inline;
+    width: 16.3%;
+}
+
+/* .slick-dots {
+    position: absolute;
+    bottom: -45px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+} */
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 60px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  display:flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #666;
+  cursor: pointer;
+}
+
+.footer-section ul li:hover {
+  color: #000;
+}
+
+.app-links img {
+  width: 120px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-section-right {
+  flex: 1 1 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.social-icons a{
+    color: black;
+}
+.footer-section-right .guarantee,
+.footer-section-right .return {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-section-right img {
+  width: 32px;
+  margin-right: 10px;
+}
